@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-white: #fff;
+    --color-dark1: rgb(39, 39, 39);
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+    --color-purple: #b040ff;
+    --color-blue: #415aca;
+    --color-fundo: #fff1df;
+    --color-topo : #5d381c;
+    --color-text : #EB8A54;
+    --color-active : #FFF1DF;
+    --color-section2-bg : #FDE0BE;
+    --color-section3-bg : #FFF1CE;
+    --color-section4-bg : #FFDAA4;
+    --color-section5-bg : rgba(255, 235, 164, 71%);
+    --color-section6-bg : rgba(255, 215, 138, 51%);
+    --color-section1-text : #955E34;
+    --color-section2-text : #994A1D;
+    --color-section3-text : #996629;
+    --color-section5-text : #835722;
+    --color-section5-text2 : #B47C38;
+    --color-section6-text : #895B26;
+}
+
+html{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fundo);
+    color: var(--color-white);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.active{
+    background: var(--color-active);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.backgroundDark{
+    background: var(--color-topo);
+}
+
+.backgroundLight{
+    background: #412713;
+}
+
+.content{
+    padding-top: 5em;
+    color:#5d381c;
+    font-size: 1.5em;
+    font-weight: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
+}
+
+.content p {
+    margin:auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1vh;
+    text-align:left;
+}
+
+.logo-main{
+    width: 50vw;
+    margin-bottom: 3vh;
+}

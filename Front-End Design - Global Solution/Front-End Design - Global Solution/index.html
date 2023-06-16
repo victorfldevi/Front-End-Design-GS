@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/Icone.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/slide.css">
+    <link rel="stylesheet" href="./assets/css/sections.css">
+    <link rel="stylesheet" href="./assets/css/checkbox.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/keyframes.css">
+    
+    <title>Plant AI</title>
+</head>
+<body id="body">
+    <div class="header backgroundDark" id="header">
+        <div class="logo_header">
+            <img src="./assets/img/logo.png" alt="Logo GS" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x btn_header" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <ul>
+                <li><a href="#Propósito" class="">Propósito</a></li>
+                <li><a href="#Métodos" class="">Métodos</a></li>
+                <li><a href="#Objetivos" class="">Objetivos</a></li>
+                <li><a href="#Alvos" class="">Alvos</a></li>
+                <li><a href="#Benefícios" class="">Benefícios</a></li>
+                <li><a href="#Utilidade" class="">Utilidade</a></li>
+            </ul>
+        </div>
+        <input type="checkbox" class="checkbox" id="checkbox" onclick="validaTema()">
+        <label for="checkbox" class="checkbox-label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <span class="ball"></span>
+        </label>
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list btn_header" viewBox="0 0 16 16">
+                <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+    </div>
+    <div class="container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <img src="./assets/img/slide/pexels-kampus-production-7658786.jpg" class="img-slide" alt="Pessoa cuidando de planta" >
+        </div>
+    
+        <div class="mySlides fade">
+        <img src="./assets/img/slide/pexels-kampus-production-7658811.jpg"  class="img-slide" alt="Pessoa colhendo alface">
+        </div>
+    
+        <div class="mySlides fade">
+        <img src="./assets/img/slide/pexels-kampus-production-7658822.jpg"  class="img-slide" alt="Pessoa colhendo frutos" >
+        </div>
+
+    
+        <!-- Next and previous buttons -->
+        <div class="pass">
+            <a class="prev mobile-ajust" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next mobile-ajust" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+                <!-- The dots/circles -->
+        <div class="circles">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <div tabindex="0" class="content" onfocus="closeSidebar()">
+        <h2>Bem vindo a</h2>
+        <img class="logo-main" src="./assets/img/Logo V2.png" alt="Logo de Plant AI">
+        <h3>A inteligência das plantas</h3>
+    </div>
+    <section class="content sections section-1-text" id="Propósito">
+        <img src="./assets/img/fome.png" alt="Fila de pessoas com potes vazios nas mãos">
+        <div>
+            <h2>Qual o meu propósito?</h2>
+            <p>Meu propósito é auxiliar as pessoas e lutar contra a insegurança alimentar, que afeta bilhões de pessoas ao redor do mundo, fornecendo as melhores informações possíveis da forma mais didática possível sobre o cuidado de plantas.
+            </p>
+        </div>
+    </section>
+    <section class="content sections section-2-bg section-2-text" id="Métodos">
+        <div>
+            <h2>Como realizaremos isso?</h2>
+            <p>Através de uma IA generativa de código aberto, que qualquer pessoa pode acessar de forma gratuita e aprender a cuidar de suas próprias plantas e hortas.
+            </p>
+        </div>
+        <img src="./assets/img/plants.png" alt="Planta com interface futurista">
+    </section>
+    <section class="content section3 section-3-bg section-3-text" id="Objetivos">
+        <img src="./assets/img/PersonCellphoneImage.png" alt="Pessoa usando um celular">
+        <div>
+            <h2>Quais os nossos objetivos?</h2>
+            <p>Dentre os vários objetivos que temos, estes são os 5 principais:</p>
+            <ul>
+                <li>Autosuficiência alimentar dos usuários</li>
+                <li>Maior oferta de alimentos naturais</li>
+                <li>Menos desperdício por transporte</li>
+                <li>Ajudar novos comercios de alimentos</li>
+                <li>Fornecer conhecimento sobre plantas</li>
+            </ul>
+        </div>
+    </section>
+    <section class="content sections section-4-bg section-4-text" id="Alvos">
+        <div>
+            <h2>Quem será afetado por Plant AI?</h2>
+            <p>Todos, e de forma positiva, desde civis e comerciantes que desejam melhorar o seu cuidado com plantas, até não usuários que usufruirão de maior quantidade e variedade de alimentos disponíveis.
+            </p>
+        </div>
+        <img src="./assets/img/globe.png" alt="Globo terrestre dentro de um buque de flores">
+    </section>
+    <section class="content section5 section-5-bg section-5-text" id="Benefícios">
+        <h2>Quais os benefícios de Plant AI?</h2>
+            <div class="section5-main-div">
+                <div class="section5-item">
+                    <img src="./assets/img/icon_graph.png" alt="Ícone de gráfico">
+                    <h3>Escalabilidade infinita</h3>
+                    <p class="section-5-text-2">quanto mais pessoas<br>mais produtores</p>
+                </div>
+                <div class="section5-item">
+                    <img src="./assets/img/icon_head.png" alt="Ícone de cabeça">
+                    <h3>Conscientização</h3>
+                    <p class="section-5-text-2">melhor conscientização<br>é a vivência</p>
+                </div>
+                <div class="section5-item">
+                    <img src="./assets/img/icon_lock.png" alt="Ícone de fechadura aberta">
+                    <h3>Acessibilidade</h3>
+                    <p class="section-5-text-2">disponível para todos<br>a todo momento</p>
+                </div>
+                <div class="section5-item">
+                    <img src="./assets/img/icon_market.png" alt="Ícone de barraca de comércio">
+                    <h3>Melhor comércio</h3>
+                    <p class="section-5-text-2">Quem produz mais<br>ajuda demais</p>
+                </div>
+            </div>
+    </section>
+    <section class="content section6 section-6-bg section-6-text" id="Utilidade">
+        <h2>Como Plant AI melhora o meu dia-a-dia?</h2>
+            <div class="section5-main-div">
+                <div class="section6-item">
+                    <img src="./assets/img/pexels-anna-shvets-5027792.jpg" alt="Pessoa segurando uma pequena planta">
+                    <p>O permite cuidar melhor<br>das suas plantas</p>
+                </div>
+                <div class="section6-item">
+                    <img src="./assets/img/pexels-erik-scheel-95425.jpg" alt="Pessoa comprando uma fruta">
+                    <p>Permite maior comércio<br>e variedade de alimentos<br>naturais!</p>
+                </div>
+                <div class="section6-item">
+                    <img src="./assets/img/pexels-alexander-grey-9910316.jpg" alt="Pedaço de pão jogado no chão">
+                    <p>Contribui para a diminuição da fome e insegurança<br>alimentar!</p>
+                </div>
+            </div>
+        </section>
+    <footer class="backgroundDark" id="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Plant AI</h4>
+                    <ul>
+                        <li><a href="#Propósito">Propósito</a></li>
+                        <li><a href="#Métodos"> Login </a></li>
+                        <li><a href="#Objetivos"> Registro </a></li>
+                        <li><a href="#Alvos"> Chat</a></li>
+                        <li><a href="#Benefícios"> Talk</a></li>
+                        <li><a href="#Utilidade">Utilidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <div class="medias-socias">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col footer-text-right">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li>Endereço 1</li>
+                        <li>Endereço 2</li>
+                        <li>Telefone 1</li>
+                        <li>Telefone 2</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/slide.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/checkbox.js"></script>
+</body>
+
+</html>
