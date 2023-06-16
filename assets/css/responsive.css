@@ -1,0 +1,149 @@
+@media screen and (max-width: 1100px){
+    .content{
+        height: 60vh;
+        font-size: 1em;
+    }
+    .sections img{
+        width: 45vh;
+    }
+    .section3 img{
+        width: 35vh;
+    }
+    .section5-item{
+        margin: 5vh 1vw;
+    }
+    .section6 h2{
+        margin: 2vh 5vw;
+    }
+    .section6 img{
+        margin: 7vh 2vw 0vh 2vw;
+    }
+}
+
+@media screen and (max-width: 869px) {
+    .navigation_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .navigation_header ul{
+        flex-direction: column !important;
+    }
+
+    .navigation_header li{
+        padding: 1em;
+    }
+
+    .btn_icon_header{
+        display: block;
+    }
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .content{
+        height: 50vh;
+        font-size: 0.8em;
+    }
+    .sections{
+        padding: 5vh 5vw;
+    }
+    .section3 img{
+        width: 30vh;
+    }
+    .section3 p{
+        margin: 5vh 10%;
+    }
+    .section5-item{
+        margin: 2vh 1vw;
+    }
+    .section6 h2{
+        margin: 2vh 5vw;
+    }
+    .section6 img{
+        margin: 5vh 2vw 0vh 2vw;
+    }
+    .footer-col{
+        width: 100%;
+    }
+    .mobile-ajust{
+        top: 180px;
+    }
+  
+}
+
+@media screen and (max-width: 600px) {
+    .content{
+        height: 50vh;
+        font-size: 0.8em;
+    }
+    .sections{
+        padding: 5vh 5vw;
+    }
+    .sections h2{
+        margin: 0vh 2vw 5vh;
+    }
+    .section3 img{
+        width: 30vh;
+    }
+    .section5-item{
+        margin: 2vh 1vw;
+    }
+    .section6 h2{
+        margin: 2vh 5vw;
+    }
+    .section6 img{
+        margin: 5vh 2vw 0vh 2vw;
+    }
+    .footer-col{
+        width: 100%;
+    }
+    .mobile-ajust{
+        top: 180px;
+    }
+  
+}
+
+@media screen and (max-width: 540px) {
+    .content{
+        height: 70vh;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    .sections{
+        padding: 5vh 5vw;
+        flex-direction: column;
+    }
+    .sections h2{
+        margin: 0vh 2vw 5vh;
+    }
+    .section3 img{
+        width: 30vh;
+    }
+    .section5-item{
+        margin: 2vh 1vw;
+    }
+    .section6 h2{
+        margin: 2vh 5vw;
+    }
+    .section6 img{
+        margin: 5vh 2vw 0vh 2vw;
+    }
+    .footer-col{
+        width: 100%;
+    }
+    .mobile-ajust{
+        top: 180px;
+    }
+  
+}
